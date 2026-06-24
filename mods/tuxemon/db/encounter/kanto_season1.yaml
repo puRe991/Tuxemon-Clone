@@ -1,0 +1,1512 @@
+monsters:
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 3
+  - 7
+  monster: kanto_bulbasaur
+  variables:
+  - key: encounter_habitat
+    value: wood
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 4
+  - 8
+  monster: kanto_ivysaur
+  variables:
+  - key: encounter_habitat
+    value: wood
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 5
+  - 9
+  monster: kanto_venusaur
+  variables:
+  - key: encounter_habitat
+    value: wood
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 6
+  - 10
+  monster: kanto_charmander
+  variables:
+  - key: encounter_habitat
+    value: fire
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 7
+  - 11
+  monster: kanto_charmeleon
+  variables:
+  - key: encounter_habitat
+    value: fire
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 8
+  - 12
+  monster: kanto_charizard
+  variables:
+  - key: encounter_habitat
+    value: fire
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 9
+  - 13
+  monster: kanto_squirtle
+  variables:
+  - key: encounter_habitat
+    value: water
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 10
+  - 14
+  monster: kanto_wartortle
+  variables:
+  - key: encounter_habitat
+    value: water
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 11
+  - 15
+  monster: kanto_blastoise
+  variables:
+  - key: encounter_habitat
+    value: water
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 12
+  - 16
+  monster: kanto_caterpie
+  variables:
+  - key: encounter_habitat
+    value: wood
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 13
+  - 17
+  monster: kanto_metapod
+  variables:
+  - key: encounter_habitat
+    value: wood
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 14
+  - 18
+  monster: kanto_butterfree
+  variables:
+  - key: encounter_habitat
+    value: wood
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 15
+  - 19
+  monster: kanto_weedle
+  variables:
+  - key: encounter_habitat
+    value: wood
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 16
+  - 20
+  monster: kanto_kakuna
+  variables:
+  - key: encounter_habitat
+    value: wood
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 17
+  - 21
+  monster: kanto_beedrill
+  variables:
+  - key: encounter_habitat
+    value: wood
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 18
+  - 22
+  monster: kanto_pidgey
+  variables:
+  - key: encounter_habitat
+    value: normal
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 19
+  - 23
+  monster: kanto_pidgeotto
+  variables:
+  - key: encounter_habitat
+    value: normal
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 2
+  - 6
+  monster: kanto_pidgeot
+  variables:
+  - key: encounter_habitat
+    value: normal
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 3
+  - 7
+  monster: kanto_rattata
+  variables:
+  - key: encounter_habitat
+    value: normal
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 4
+  - 8
+  monster: kanto_raticate
+  variables:
+  - key: encounter_habitat
+    value: normal
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 5
+  - 9
+  monster: kanto_spearow
+  variables:
+  - key: encounter_habitat
+    value: normal
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 6
+  - 10
+  monster: kanto_fearow
+  variables:
+  - key: encounter_habitat
+    value: normal
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 7
+  - 11
+  monster: kanto_ekans
+  variables:
+  - key: encounter_habitat
+    value: earth
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 8
+  - 12
+  monster: kanto_arbok
+  variables:
+  - key: encounter_habitat
+    value: earth
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 9
+  - 13
+  monster: kanto_pikachu
+  variables:
+  - key: encounter_habitat
+    value: metal
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 10
+  - 14
+  monster: kanto_raichu
+  variables:
+  - key: encounter_habitat
+    value: metal
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 11
+  - 15
+  monster: kanto_sandshrew
+  variables:
+  - key: encounter_habitat
+    value: earth
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 12
+  - 16
+  monster: kanto_sandslash
+  variables:
+  - key: encounter_habitat
+    value: earth
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 13
+  - 17
+  monster: kanto_nidoran_f
+  variables:
+  - key: encounter_habitat
+    value: earth
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 14
+  - 18
+  monster: kanto_nidorina
+  variables:
+  - key: encounter_habitat
+    value: earth
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 15
+  - 19
+  monster: kanto_nidoqueen
+  variables:
+  - key: encounter_habitat
+    value: earth
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 16
+  - 20
+  monster: kanto_nidoran_m
+  variables:
+  - key: encounter_habitat
+    value: earth
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 17
+  - 21
+  monster: kanto_nidorino
+  variables:
+  - key: encounter_habitat
+    value: earth
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 18
+  - 22
+  monster: kanto_nidoking
+  variables:
+  - key: encounter_habitat
+    value: earth
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 19
+  - 23
+  monster: kanto_clefairy
+  variables:
+  - key: encounter_habitat
+    value: normal
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 2
+  - 6
+  monster: kanto_clefable
+  variables:
+  - key: encounter_habitat
+    value: normal
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 3
+  - 7
+  monster: kanto_vulpix
+  variables:
+  - key: encounter_habitat
+    value: fire
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 4
+  - 8
+  monster: kanto_ninetales
+  variables:
+  - key: encounter_habitat
+    value: fire
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 5
+  - 9
+  monster: kanto_jigglypuff
+  variables:
+  - key: encounter_habitat
+    value: normal
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 6
+  - 10
+  monster: kanto_wigglytuff
+  variables:
+  - key: encounter_habitat
+    value: normal
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 7
+  - 11
+  monster: kanto_zubat
+  variables:
+  - key: encounter_habitat
+    value: earth
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 8
+  - 12
+  monster: kanto_golbat
+  variables:
+  - key: encounter_habitat
+    value: earth
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 9
+  - 13
+  monster: kanto_oddish
+  variables:
+  - key: encounter_habitat
+    value: wood
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 10
+  - 14
+  monster: kanto_gloom
+  variables:
+  - key: encounter_habitat
+    value: wood
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 11
+  - 15
+  monster: kanto_vileplume
+  variables:
+  - key: encounter_habitat
+    value: wood
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 12
+  - 16
+  monster: kanto_paras
+  variables:
+  - key: encounter_habitat
+    value: wood
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 13
+  - 17
+  monster: kanto_parasect
+  variables:
+  - key: encounter_habitat
+    value: wood
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 14
+  - 18
+  monster: kanto_venonat
+  variables:
+  - key: encounter_habitat
+    value: wood
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 15
+  - 19
+  monster: kanto_venomoth
+  variables:
+  - key: encounter_habitat
+    value: wood
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 16
+  - 20
+  monster: kanto_diglett
+  variables:
+  - key: encounter_habitat
+    value: earth
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 17
+  - 21
+  monster: kanto_dugtrio
+  variables:
+  - key: encounter_habitat
+    value: earth
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 18
+  - 22
+  monster: kanto_meowth
+  variables:
+  - key: encounter_habitat
+    value: normal
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 19
+  - 23
+  monster: kanto_persian
+  variables:
+  - key: encounter_habitat
+    value: normal
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 2
+  - 6
+  monster: kanto_psyduck
+  variables:
+  - key: encounter_habitat
+    value: water
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 3
+  - 7
+  monster: kanto_golduck
+  variables:
+  - key: encounter_habitat
+    value: water
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 4
+  - 8
+  monster: kanto_mankey
+  variables:
+  - key: encounter_habitat
+    value: earth
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 5
+  - 9
+  monster: kanto_primeape
+  variables:
+  - key: encounter_habitat
+    value: earth
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 6
+  - 10
+  monster: kanto_growlithe
+  variables:
+  - key: encounter_habitat
+    value: fire
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 7
+  - 11
+  monster: kanto_arcanine
+  variables:
+  - key: encounter_habitat
+    value: fire
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 8
+  - 12
+  monster: kanto_poliwag
+  variables:
+  - key: encounter_habitat
+    value: water
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 9
+  - 13
+  monster: kanto_poliwhirl
+  variables:
+  - key: encounter_habitat
+    value: water
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 10
+  - 14
+  monster: kanto_poliwrath
+  variables:
+  - key: encounter_habitat
+    value: water
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 11
+  - 15
+  monster: kanto_abra
+  variables:
+  - key: encounter_habitat
+    value: normal
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 12
+  - 16
+  monster: kanto_kadabra
+  variables:
+  - key: encounter_habitat
+    value: normal
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 13
+  - 17
+  monster: kanto_alakazam
+  variables:
+  - key: encounter_habitat
+    value: normal
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 14
+  - 18
+  monster: kanto_machop
+  variables:
+  - key: encounter_habitat
+    value: earth
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 15
+  - 19
+  monster: kanto_machoke
+  variables:
+  - key: encounter_habitat
+    value: earth
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 16
+  - 20
+  monster: kanto_machamp
+  variables:
+  - key: encounter_habitat
+    value: earth
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 17
+  - 21
+  monster: kanto_bellsprout
+  variables:
+  - key: encounter_habitat
+    value: wood
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 18
+  - 22
+  monster: kanto_weepinbell
+  variables:
+  - key: encounter_habitat
+    value: wood
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 19
+  - 23
+  monster: kanto_victreebel
+  variables:
+  - key: encounter_habitat
+    value: wood
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 2
+  - 6
+  monster: kanto_tentacool
+  variables:
+  - key: encounter_habitat
+    value: water
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 3
+  - 7
+  monster: kanto_tentacruel
+  variables:
+  - key: encounter_habitat
+    value: water
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 4
+  - 8
+  monster: kanto_geodude
+  variables:
+  - key: encounter_habitat
+    value: earth
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 5
+  - 9
+  monster: kanto_graveler
+  variables:
+  - key: encounter_habitat
+    value: earth
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 6
+  - 10
+  monster: kanto_golem
+  variables:
+  - key: encounter_habitat
+    value: earth
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 7
+  - 11
+  monster: kanto_ponyta
+  variables:
+  - key: encounter_habitat
+    value: fire
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 8
+  - 12
+  monster: kanto_rapidash
+  variables:
+  - key: encounter_habitat
+    value: fire
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 9
+  - 13
+  monster: kanto_slowpoke
+  variables:
+  - key: encounter_habitat
+    value: water
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 10
+  - 14
+  monster: kanto_slowbro
+  variables:
+  - key: encounter_habitat
+    value: water
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 11
+  - 15
+  monster: kanto_magnemite
+  variables:
+  - key: encounter_habitat
+    value: metal
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 12
+  - 16
+  monster: kanto_magneton
+  variables:
+  - key: encounter_habitat
+    value: metal
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 13
+  - 17
+  monster: kanto_farfetchd
+  variables:
+  - key: encounter_habitat
+    value: normal
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 14
+  - 18
+  monster: kanto_doduo
+  variables:
+  - key: encounter_habitat
+    value: normal
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 15
+  - 19
+  monster: kanto_dodrio
+  variables:
+  - key: encounter_habitat
+    value: normal
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 16
+  - 20
+  monster: kanto_seel
+  variables:
+  - key: encounter_habitat
+    value: water
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 17
+  - 21
+  monster: kanto_dewgong
+  variables:
+  - key: encounter_habitat
+    value: water
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 18
+  - 22
+  monster: kanto_grimer
+  variables:
+  - key: encounter_habitat
+    value: earth
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 19
+  - 23
+  monster: kanto_muk
+  variables:
+  - key: encounter_habitat
+    value: earth
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 2
+  - 6
+  monster: kanto_shellder
+  variables:
+  - key: encounter_habitat
+    value: water
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 3
+  - 7
+  monster: kanto_cloyster
+  variables:
+  - key: encounter_habitat
+    value: water
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 4
+  - 8
+  monster: kanto_gastly
+  variables:
+  - key: encounter_habitat
+    value: normal
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 5
+  - 9
+  monster: kanto_haunter
+  variables:
+  - key: encounter_habitat
+    value: normal
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 6
+  - 10
+  monster: kanto_gengar
+  variables:
+  - key: encounter_habitat
+    value: normal
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 7
+  - 11
+  monster: kanto_onix
+  variables:
+  - key: encounter_habitat
+    value: earth
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 8
+  - 12
+  monster: kanto_drowzee
+  variables:
+  - key: encounter_habitat
+    value: normal
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 9
+  - 13
+  monster: kanto_hypno
+  variables:
+  - key: encounter_habitat
+    value: normal
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 10
+  - 14
+  monster: kanto_krabby
+  variables:
+  - key: encounter_habitat
+    value: water
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 11
+  - 15
+  monster: kanto_kingler
+  variables:
+  - key: encounter_habitat
+    value: water
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 12
+  - 16
+  monster: kanto_voltorb
+  variables:
+  - key: encounter_habitat
+    value: metal
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 13
+  - 17
+  monster: kanto_electrode
+  variables:
+  - key: encounter_habitat
+    value: metal
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 14
+  - 18
+  monster: kanto_exeggcute
+  variables:
+  - key: encounter_habitat
+    value: wood
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 15
+  - 19
+  monster: kanto_exeggutor
+  variables:
+  - key: encounter_habitat
+    value: wood
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 16
+  - 20
+  monster: kanto_cubone
+  variables:
+  - key: encounter_habitat
+    value: earth
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 17
+  - 21
+  monster: kanto_marowak
+  variables:
+  - key: encounter_habitat
+    value: earth
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 18
+  - 22
+  monster: kanto_hitmonlee
+  variables:
+  - key: encounter_habitat
+    value: earth
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 19
+  - 23
+  monster: kanto_hitmonchan
+  variables:
+  - key: encounter_habitat
+    value: earth
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 2
+  - 6
+  monster: kanto_lickitung
+  variables:
+  - key: encounter_habitat
+    value: normal
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 3
+  - 7
+  monster: kanto_koffing
+  variables:
+  - key: encounter_habitat
+    value: earth
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 4
+  - 8
+  monster: kanto_weezing
+  variables:
+  - key: encounter_habitat
+    value: earth
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 5
+  - 9
+  monster: kanto_rhyhorn
+  variables:
+  - key: encounter_habitat
+    value: earth
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 6
+  - 10
+  monster: kanto_rhydon
+  variables:
+  - key: encounter_habitat
+    value: earth
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 7
+  - 11
+  monster: kanto_chansey
+  variables:
+  - key: encounter_habitat
+    value: normal
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 8
+  - 12
+  monster: kanto_tangela
+  variables:
+  - key: encounter_habitat
+    value: wood
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 9
+  - 13
+  monster: kanto_kangaskhan
+  variables:
+  - key: encounter_habitat
+    value: normal
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 10
+  - 14
+  monster: kanto_horsea
+  variables:
+  - key: encounter_habitat
+    value: water
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 11
+  - 15
+  monster: kanto_seadra
+  variables:
+  - key: encounter_habitat
+    value: water
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 12
+  - 16
+  monster: kanto_goldeen
+  variables:
+  - key: encounter_habitat
+    value: water
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 13
+  - 17
+  monster: kanto_seaking
+  variables:
+  - key: encounter_habitat
+    value: water
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 14
+  - 18
+  monster: kanto_staryu
+  variables:
+  - key: encounter_habitat
+    value: water
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 15
+  - 19
+  monster: kanto_starmie
+  variables:
+  - key: encounter_habitat
+    value: water
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 16
+  - 20
+  monster: kanto_mr_mime
+  variables:
+  - key: encounter_habitat
+    value: normal
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 17
+  - 21
+  monster: kanto_scyther
+  variables:
+  - key: encounter_habitat
+    value: wood
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 18
+  - 22
+  monster: kanto_jynx
+  variables:
+  - key: encounter_habitat
+    value: water
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 19
+  - 23
+  monster: kanto_electabuzz
+  variables:
+  - key: encounter_habitat
+    value: metal
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 2
+  - 6
+  monster: kanto_magmar
+  variables:
+  - key: encounter_habitat
+    value: fire
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 3
+  - 7
+  monster: kanto_pinsir
+  variables:
+  - key: encounter_habitat
+    value: wood
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 4
+  - 8
+  monster: kanto_tauros
+  variables:
+  - key: encounter_habitat
+    value: normal
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 5
+  - 9
+  monster: kanto_magikarp
+  variables:
+  - key: encounter_habitat
+    value: water
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 6
+  - 10
+  monster: kanto_gyarados
+  variables:
+  - key: encounter_habitat
+    value: water
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 7
+  - 11
+  monster: kanto_lapras
+  variables:
+  - key: encounter_habitat
+    value: water
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 8
+  - 12
+  monster: kanto_ditto
+  variables:
+  - key: encounter_habitat
+    value: normal
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 9
+  - 13
+  monster: kanto_eevee
+  variables:
+  - key: encounter_habitat
+    value: normal
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 10
+  - 14
+  monster: kanto_vaporeon
+  variables:
+  - key: encounter_habitat
+    value: water
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 11
+  - 15
+  monster: kanto_jolteon
+  variables:
+  - key: encounter_habitat
+    value: metal
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 12
+  - 16
+  monster: kanto_flareon
+  variables:
+  - key: encounter_habitat
+    value: fire
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 13
+  - 17
+  monster: kanto_porygon
+  variables:
+  - key: encounter_habitat
+    value: metal
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 14
+  - 18
+  monster: kanto_omanyte
+  variables:
+  - key: encounter_habitat
+    value: water
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 15
+  - 19
+  monster: kanto_omastar
+  variables:
+  - key: encounter_habitat
+    value: water
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 16
+  - 20
+  monster: kanto_kabuto
+  variables:
+  - key: encounter_habitat
+    value: water
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 17
+  - 21
+  monster: kanto_kabutops
+  variables:
+  - key: encounter_habitat
+    value: water
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 18
+  - 22
+  monster: kanto_aerodactyl
+  variables:
+  - key: encounter_habitat
+    value: earth
+- encounter_rate: 0.4
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 19
+  - 23
+  monster: kanto_snorlax
+  variables:
+  - key: encounter_habitat
+    value: normal
+- encounter_rate: 0.05
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 2
+  - 6
+  monster: kanto_articuno
+  variables:
+  - key: encounter_habitat
+    value: water
+- encounter_rate: 0.05
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 3
+  - 7
+  monster: kanto_zapdos
+  variables:
+  - key: encounter_habitat
+    value: metal
+- encounter_rate: 0.05
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 4
+  - 8
+  monster: kanto_moltres
+  variables:
+  - key: encounter_habitat
+    value: fire
+- encounter_rate: 0.05
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 5
+  - 9
+  monster: kanto_dratini
+  variables:
+  - key: encounter_habitat
+    value: water
+- encounter_rate: 0.05
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 6
+  - 10
+  monster: kanto_dragonair
+  variables:
+  - key: encounter_habitat
+    value: water
+- encounter_rate: 0.05
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 7
+  - 11
+  monster: kanto_dragonite
+  variables:
+  - key: encounter_habitat
+    value: fire
+- encounter_rate: 0.05
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 8
+  - 12
+  monster: kanto_mewtwo
+  variables:
+  - key: encounter_habitat
+    value: normal
+- encounter_rate: 0.05
+  exp_req_mod: 1
+  held_items: []
+  level_range:
+  - 9
+  - 13
+  monster: kanto_mew
+  variables:
+  - key: encounter_habitat
+    value: normal
+slug: kanto_season1

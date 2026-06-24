@@ -1,0 +1,44 @@
+slug: kanto_krabby
+species: kanto_region_archive
+moveset:
+- level_learned: 1
+  technique: struggle
+  learning_method: fallback
+- level_learned: 1
+  technique: ram
+- level_learned: 4
+  technique: assault
+- level_learned: 7
+  technique: glower
+evolutions: []
+history:
+- slug: kanto_krabby
+  stage: standalone
+  evolves_from: []
+  evolves_into: []
+terrains:
+- urban
+tags:
+- kanto
+- season1
+- water
+shape: landrace
+stage: standalone
+types:
+- water
+gender_weights:
+  male: 0.5
+  female: 0.5
+txmn_id: 1098
+height: 48
+weight: 103
+sounds:
+  combat_call:
+    sfx: sound_cat_meow3
+    volume: 1.0
+  faint_call:
+    sfx: sound_cat_meow3_faint
+    volume: 1.0
+catch_rate: 100.0
+lower_catch_resistance: 0.95
+upper_catch_resistance: 1.25
