@@ -6,7 +6,7 @@ from typing import Any
 import pytest
 import yaml
 
-ALL_MONSTERS = 411
+ALL_MONSTERS = 562
 MAX_TXMN_ID = 393
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 MONSTER_FOLDER = PROJECT_ROOT / "mods/tuxemon/db/monster"
