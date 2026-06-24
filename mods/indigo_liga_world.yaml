@@ -1,0 +1,463 @@
+# Structured world blueprint for the complete Indigo/Kanto campaign.
+# Design data only: TMX maps and event scripts can be generated from this topology.
+schema_version: 1
+world_id: INDIGO_KANTO
+world_title: Indigo-Welt
+campaign_id: INDIGO_LIGA
+runtime_status: blueprint
+safety_notes:
+  - Porta Vista is represented as a harmless harbor festival.
+  - Safari Zone quests exclude firearms and use ranger permits instead.
+  - Porygon content must avoid rapid flashing lights and hard strobe transitions.
+coordinate_system:
+  tile_size_px: 16
+  region_grid_px: 640
+  note: Coordinates align major outdoor maps on a coarse world-grid; interiors are grouped under their parent location.
+progression_gates:
+  cut: BOULDER_BADGE
+  surf: SOUL_BADGE
+  strength: RAINBOW_BADGE
+  volcano_lab: CINNABAR_KEY
+  viridian_gym: SEVEN_BADGES
+  indigo_plateau: EIGHT_BADGES
+starter_town: PALLET_TOWN
+league_goal: INDIGO_PLATEAU
+locations:
+  - id: PALLET_TOWN
+    name: Alabastia
+    type: town
+    act: ACT_1
+    x: 0
+    y: 2560
+    recommended_levels: [5, 7]
+    key_npcs: [PROF_OAK, ASH, GARY, DELIA]
+    services: [starter_lab, player_home, rival_home]
+    interiors: [OAK_LAB, PLAYER_HOME, GARY_HOME]
+    quests: [KANTO_MAIN_001]
+  - id: ROUTE_1
+    name: Route 1
+    type: route
+    act: ACT_1
+    x: 0
+    y: 1920
+    recommended_levels: [3, 8]
+    encounter_themes: [early_birds, field_mammals]
+    quests: [KANTO_MAIN_002]
+  - id: VIRIDIAN_CITY
+    name: Vertania City
+    type: city
+    act: ACT_1
+    x: 0
+    y: 1280
+    recommended_levels: [5, 10]
+    key_npcs: [NURSE_JOY_VIRIDIAN, OFFICER_JENNY_VIRIDIAN]
+    services: [pokemon_center, tuxemart, gym_locked]
+    interiors: [VIRIDIAN_POKEMON_CENTER, VIRIDIAN_MART, VIRIDIAN_GYM]
+    quests: [KANTO_MAIN_003, KANTO_MAIN_062]
+  - id: ROUTE_22
+    name: Route 22
+    type: route
+    act: ACT_1
+    x: -640
+    y: 1280
+    recommended_levels: [6, 12]
+    encounter_themes: [rival_training, plateau_foreshadowing]
+    quests: [KANTO_SIDE_RIVAL_001]
+  - id: ROUTE_2
+    name: Route 2
+    type: route
+    act: ACT_1
+    x: 0
+    y: 640
+    recommended_levels: [6, 12]
+    encounter_themes: [forest_edge]
+    gates: [CUT_TREE_NORTH]
+  - id: VIRIDIAN_FOREST
+    name: Vertania-Wald
+    type: dungeon
+    act: ACT_1
+    x: 0
+    y: 0
+    recommended_levels: [7, 13]
+    key_npcs: [SAMURAI]
+    encounter_themes: [bugs, poison]
+    quests: [KANTO_MAIN_004]
+  - id: PEWTER_CITY
+    name: Marmoria City
+    type: city
+    act: ACT_1
+    x: 0
+    y: -640
+    recommended_levels: [10, 16]
+    key_npcs: [BROCK]
+    services: [pokemon_center, tuxemart, museum, gym]
+    interiors: [PEWTER_GYM, PEWTER_MUSEUM]
+    badge: BOULDER_BADGE
+    quests: [KANTO_MAIN_005, KANTO_MAIN_006]
+  - id: ROUTE_3
+    name: Route 3
+    type: route
+    act: ACT_2
+    x: 640
+    y: -640
+    recommended_levels: [12, 18]
+    encounter_themes: [trainers, mountain_edge]
+  - id: MT_MOON
+    name: Mondberg
+    type: dungeon
+    act: ACT_2
+    x: 1280
+    y: -640
+    recommended_levels: [14, 20]
+    key_npcs: [SEYMOUR, TEAM_ROCKET_GRUNT]
+    encounter_themes: [caves, fossils]
+    quests: [KANTO_MAIN_007]
+  - id: ROUTE_4
+    name: Route 4
+    type: route
+    act: ACT_2
+    x: 1920
+    y: -640
+    recommended_levels: [15, 21]
+    encounter_themes: [mountain_exit]
+  - id: CERULEAN_CITY
+    name: Azuria City
+    type: city
+    act: ACT_2
+    x: 2560
+    y: -640
+    recommended_levels: [16, 24]
+    key_npcs: [MISTY, CERULEAN_SISTERS]
+    services: [pokemon_center, tuxemart, bike_shop, gym]
+    interiors: [CERULEAN_GYM, BIKE_SHOP]
+    badge: CASCADE_BADGE
+    quests: [KANTO_MAIN_008, KANTO_MAIN_009]
+  - id: ROUTE_24_25
+    name: Nugget-Brücke und Route 25
+    type: route
+    act: ACT_2
+    x: 2560
+    y: -1280
+    recommended_levels: [18, 25]
+    key_npcs: [BILL]
+    encounter_themes: [bridge_trainers, lighthouse_signal]
+    interiors: [BILLS_LIGHTHOUSE]
+    quests: [KANTO_MAIN_010]
+  - id: ROUTE_5_6
+    name: Routen 5 und 6
+    type: route
+    act: ACT_2
+    x: 2560
+    y: 0
+    recommended_levels: [19, 26]
+    services: [daycare_preview, underground_path]
+    gates: [SAFFRON_GUARD_BLOCK]
+  - id: VERMILION_CITY
+    name: Orania City
+    type: city
+    act: ACT_2
+    x: 2560
+    y: 640
+    recommended_levels: [20, 28]
+    key_npcs: [LT_SURGE]
+    services: [pokemon_center, tuxemart, harbor, gym]
+    interiors: [VERMILION_GYM, FAN_CLUB, HARBOR_TERMINAL]
+    badge: THUNDER_BADGE
+    quests: [KANTO_MAIN_011, KANTO_MAIN_012]
+  - id: SS_ANNE
+    name: M.S. Anne
+    type: dungeon
+    act: ACT_3
+    x: 3200
+    y: 640
+    recommended_levels: [22, 30]
+    key_npcs: [CAPTAIN, GARY, TEAM_ROCKET_TRIO]
+    encounter_themes: [ship_trainers, rocket_cargo]
+    quests: [KANTO_MAIN_013]
+  - id: SEAFOAM_DRIFT
+    name: Schiffbruch- und Rieseninsel-Route
+    type: sea_route
+    act: ACT_3
+    x: 3840
+    y: 640
+    recommended_levels: [23, 31]
+    encounter_themes: [open_sea, giant_island]
+    quests: [KANTO_MAIN_014]
+  - id: PORTA_VISTA
+    name: Porta Vista
+    type: town
+    act: ACT_3
+    x: 4480
+    y: 640
+    recommended_levels: [24, 32]
+    services: [harbor_festival, pokemon_center]
+    quests: [KANTO_MAIN_015]
+  - id: MAIDENS_PEAK
+    name: Maiden's Peak
+    type: landmark
+    act: ACT_3
+    x: 5120
+    y: 640
+    recommended_levels: [25, 33]
+    encounter_themes: [ghost_story, festival]
+    quests: [KANTO_MAIN_016]
+  - id: ROCK_TUNNEL
+    name: Felstunnel
+    type: dungeon
+    act: ACT_4
+    x: 3200
+    y: -640
+    recommended_levels: [24, 32]
+    encounter_themes: [dark_cave, hikers]
+    gates: [FLASH_RECOMMENDED]
+  - id: LAVENDER_TOWN
+    name: Lavandia
+    type: town
+    act: ACT_4
+    x: 3840
+    y: -640
+    recommended_levels: [26, 35]
+    key_npcs: [MR_FUJI]
+    services: [pokemon_center, memorial_tower]
+    interiors: [POKEMON_TOWER]
+    quests: [KANTO_MAIN_017]
+  - id: CELADON_CITY
+    name: Prismania City
+    type: city
+    act: ACT_4
+    x: 3840
+    y: 0
+    recommended_levels: [28, 38]
+    key_npcs: [ERIKA]
+    services: [department_store, game_corner_safe_arcade, gym]
+    interiors: [CELADON_GYM, DEPARTMENT_STORE, ROCKET_HIDEOUT]
+    badge: RAINBOW_BADGE
+    quests: [KANTO_MAIN_018, KANTO_MAIN_019]
+  - id: SAFFRON_CITY
+    name: Saffronia City
+    type: city
+    act: ACT_4
+    x: 3200
+    y: 0
+    recommended_levels: [30, 42]
+    key_npcs: [SABRINA]
+    services: [pokemon_center, tuxemart, dojo, gym, silph_office]
+    interiors: [SAFFRON_GYM, FIGHTING_DOJO, SILPH_CO]
+    badge: MARSH_BADGE
+    quests: [KANTO_MAIN_020, KANTO_MAIN_021]
+  - id: ROUTE_12_15
+    name: Küstensteg-Routen 12 bis 15
+    type: route
+    act: ACT_5
+    x: 4480
+    y: 0
+    recommended_levels: [30, 40]
+    gates: [POKE_FLUTE_SNORLAX]
+    encounter_themes: [fishing, bird_trainers]
+    quests: [KANTO_MAIN_022]
+  - id: FUCHSIA_CITY
+    name: Fuchsania City
+    type: city
+    act: ACT_5
+    x: 3840
+    y: 1280
+    recommended_levels: [33, 44]
+    key_npcs: [KOGA, SAFARI_RANGER]
+    services: [pokemon_center, tuxemart, safari_zone, gym]
+    interiors: [FUCHSIA_GYM, SAFARI_GATE]
+    badge: SOUL_BADGE
+    quests: [KANTO_MAIN_023, KANTO_MAIN_024]
+  - id: SAFARI_ZONE
+    name: Safari-Zone
+    type: preserve
+    act: ACT_5
+    x: 4480
+    y: 1280
+    recommended_levels: [34, 45]
+    services: [ranger_permit, conservation_tasks]
+    encounter_themes: [rare_preserve, no_firearms]
+    quests: [KANTO_MAIN_025]
+  - id: DIGITAL_LAB
+    name: Digitales Transferlabor
+    type: dungeon
+    act: ACT_5
+    x: 3200
+    y: 1280
+    recommended_levels: [35, 46]
+    key_npcs: [PORYGON_RESEARCHER]
+    encounter_themes: [virtual_grid, rocket_network]
+    quests: [KANTO_MAIN_026]
+  - id: ROUTE_16_18
+    name: Radweg-Routen 16 bis 18
+    type: route
+    act: ACT_6
+    x: 3200
+    y: 320
+    recommended_levels: [34, 46]
+    gates: [BIKE_OR_PASS]
+    encounter_themes: [bikers, snorlax]
+    quests: [KANTO_MAIN_027]
+  - id: EVOLUTION_GARDEN
+    name: Entwicklungsgarten
+    type: landmark
+    act: ACT_6
+    x: 2560
+    y: 1280
+    recommended_levels: [35, 47]
+    key_npcs: [EEVEE_BROTHERS]
+    quests: [KANTO_MAIN_028]
+  - id: GRAMPA_CANYON
+    name: Grampa Canyon
+    type: dungeon
+    act: ACT_6
+    x: 4480
+    y: 1920
+    recommended_levels: [36, 48]
+    encounter_themes: [fossils, excavation]
+    quests: [KANTO_MAIN_029]
+  - id: BREEDING_CENTER
+    name: Rocket-Zuchtcenter
+    type: dungeon
+    act: ACT_7
+    x: 2560
+    y: 1920
+    recommended_levels: [38, 50]
+    key_npcs: [TEAM_ROCKET_TRIO, BREEDER_IMPOSTOR]
+    quests: [KANTO_MAIN_030]
+  - id: SEAFOAM_ISLANDS
+    name: Seeschauminseln
+    type: dungeon
+    act: ACT_7
+    x: 3840
+    y: 1920
+    recommended_levels: [40, 52]
+    gates: [SURF, STRENGTH]
+    encounter_themes: [ice_caves, sea_currents]
+  - id: CINNABAR_ISLAND
+    name: Zinnoberinsel
+    type: city
+    act: ACT_7
+    x: 3200
+    y: 2560
+    recommended_levels: [42, 55]
+    key_npcs: [BLAINE]
+    services: [pokemon_center, lab, mansion, gym]
+    interiors: [CINNABAR_LAB, POKEMON_MANSION, CINNABAR_GYM]
+    badge: VOLCANO_BADGE
+    quests: [KANTO_MAIN_031, KANTO_MAIN_032]
+  - id: VIRIDIAN_GYM_FINALE
+    name: Vertania-Arena Finale
+    type: gym
+    act: ACT_7
+    x: -320
+    y: 1280
+    recommended_levels: [45, 58]
+    key_npcs: [GIOVANNI]
+    badge: EARTH_BADGE
+    quests: [KANTO_MAIN_033]
+  - id: OAK_RANCH
+    name: Eichs Ranch
+    type: landmark
+    act: ACT_8
+    x: -640
+    y: 2560
+    recommended_levels: [45, 60]
+    key_npcs: [PROF_OAK, BRUNO]
+    services: [party_review, bond_training]
+    quests: [KANTO_MAIN_034, KANTO_MAIN_035]
+  - id: POKEMOPOLIS
+    name: Pokémopolis-Ruinen
+    type: dungeon
+    act: ACT_8
+    x: 5120
+    y: 1920
+    recommended_levels: [46, 60]
+    encounter_themes: [ancient_pokemon, tablet_puzzle]
+    quests: [KANTO_MAIN_036]
+  - id: ROUTE_23
+    name: Siegesstraße-Zugang
+    type: route
+    act: ACT_8
+    x: -1280
+    y: 1280
+    recommended_levels: [48, 62]
+    gates: [EIGHT_BADGES]
+    quests: [KANTO_MAIN_037]
+  - id: VICTORY_ROAD
+    name: Siegesstraße
+    type: dungeon
+    act: ACT_8
+    x: -1920
+    y: 1280
+    recommended_levels: [50, 64]
+    gates: [STRENGTH]
+    encounter_themes: [elite_trainers, final_cave]
+  - id: INDIGO_PLATEAU
+    name: Indigo-Plateau
+    type: league
+    act: ACT_9
+    x: -2560
+    y: 1280
+    recommended_levels: [52, 68]
+    key_npcs: [RICHIE, ASH, GARY, LEAGUE_STAFF]
+    services: [league_registration, tournament_fields, pokemon_center]
+    interiors: [LEAGUE_LOBBY, FIELD_WATER, FIELD_ROCK, FIELD_GRASS, FIELD_ICE]
+    quests: [KANTO_MAIN_038, KANTO_MAIN_039, KANTO_MAIN_040]
+  - id: ORANGE_AIRSHIP_TERMINAL
+    name: Luftschiffterminal zum Orange-Archipel
+    type: epilogue_gate
+    act: ACT_9
+    x: -3200
+    y: 1280
+    recommended_levels: [55, 70]
+    gates: [INDIGO_BADGE, ORANGE_UNLOCK_FLAG]
+    quests: [KANTO_EPILOGUE_001]
+connections:
+  - [PALLET_TOWN, ROUTE_1, north]
+  - [ROUTE_1, VIRIDIAN_CITY, north]
+  - [VIRIDIAN_CITY, ROUTE_22, west]
+  - [VIRIDIAN_CITY, ROUTE_2, north]
+  - [ROUTE_2, VIRIDIAN_FOREST, north]
+  - [VIRIDIAN_FOREST, PEWTER_CITY, north]
+  - [PEWTER_CITY, ROUTE_3, east]
+  - [ROUTE_3, MT_MOON, east]
+  - [MT_MOON, ROUTE_4, east]
+  - [ROUTE_4, CERULEAN_CITY, east]
+  - [CERULEAN_CITY, ROUTE_24_25, north]
+  - [CERULEAN_CITY, ROUTE_5_6, south]
+  - [ROUTE_5_6, VERMILION_CITY, south]
+  - [VERMILION_CITY, SS_ANNE, harbor]
+  - [SS_ANNE, SEAFOAM_DRIFT, story]
+  - [SEAFOAM_DRIFT, PORTA_VISTA, east]
+  - [PORTA_VISTA, MAIDENS_PEAK, east]
+  - [CERULEAN_CITY, ROCK_TUNNEL, east]
+  - [ROCK_TUNNEL, LAVENDER_TOWN, east]
+  - [LAVENDER_TOWN, CELADON_CITY, west]
+  - [CELADON_CITY, SAFFRON_CITY, east]
+  - [SAFFRON_CITY, VERMILION_CITY, south]
+  - [LAVENDER_TOWN, ROUTE_12_15, south]
+  - [ROUTE_12_15, FUCHSIA_CITY, south]
+  - [FUCHSIA_CITY, SAFARI_ZONE, east]
+  - [SAFFRON_CITY, DIGITAL_LAB, south]
+  - [CELADON_CITY, ROUTE_16_18, south]
+  - [ROUTE_16_18, FUCHSIA_CITY, east]
+  - [FUCHSIA_CITY, GRAMPA_CANYON, east]
+  - [FUCHSIA_CITY, SEAFOAM_ISLANDS, south]
+  - [SEAFOAM_ISLANDS, CINNABAR_ISLAND, west]
+  - [PALLET_TOWN, CINNABAR_ISLAND, surf]
+  - [VIRIDIAN_CITY, VIRIDIAN_GYM_FINALE, story]
+  - [PALLET_TOWN, OAK_RANCH, west]
+  - [GRAMPA_CANYON, POKEMOPOLIS, east]
+  - [ROUTE_22, ROUTE_23, west]
+  - [ROUTE_23, VICTORY_ROAD, west]
+  - [VICTORY_ROAD, INDIGO_PLATEAU, west]
+  - [INDIGO_PLATEAU, ORANGE_AIRSHIP_TERMINAL, epilogue]
+badges:
+  - {id: BOULDER_BADGE, leader: BROCK, city: PEWTER_CITY, order: 1}
+  - {id: CASCADE_BADGE, leader: MISTY, city: CERULEAN_CITY, order: 2}
+  - {id: THUNDER_BADGE, leader: LT_SURGE, city: VERMILION_CITY, order: 3}
+  - {id: RAINBOW_BADGE, leader: ERIKA, city: CELADON_CITY, order: 4}
+  - {id: MARSH_BADGE, leader: SABRINA, city: SAFFRON_CITY, order: 5}
+  - {id: SOUL_BADGE, leader: KOGA, city: FUCHSIA_CITY, order: 6}
+  - {id: VOLCANO_BADGE, leader: BLAINE, city: CINNABAR_ISLAND, order: 7}
+  - {id: EARTH_BADGE, leader: GIOVANNI, city: VIRIDIAN_GYM_FINALE, order: 8}
