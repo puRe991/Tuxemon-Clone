@@ -636,6 +636,22 @@ msgstr "Tagebuch"
 msgid "menu_load"
 msgstr "Laden"
 
+msgid "menu_start_title"
+msgstr "Tuxemon"
+
+msgid "menu_start_subtitle"
+msgstr "Wähle, wie deine Reise beginnt."
+
+msgid "menu_continue_journey"
+msgstr "Reise fortsetzen"
+
+msgid "menu_begin_journey"
+msgstr "Reise beginnen"
+
+msgid "menu_no_mods"
+msgstr "Es ist kein aktiver Mod konfiguriert. Eine neue Reise kann nicht starten."
+
+
 msgid "menu_monster"
 msgstr "Tuxemon"
 
