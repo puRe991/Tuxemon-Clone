@@ -1,0 +1,315 @@
+# Structured quest blueprint for the first Indigo-Liga story arc.
+# This is design data, not yet loaded by the runtime event engine.
+schema_version: 1
+campaign_id: INDIGO_LIGA
+campaign_title: Der Weg zur Indigo-Liga
+quest_fields:
+  - QuestId
+  - SourceEpisode
+  - Act
+  - QuestType
+  - Title
+  - Description
+  - PrerequisiteQuestIds
+  - RequiredBadges
+  - QuestGiverNpcId
+  - Locations
+  - Objectives
+  - OptionalObjectives
+  - EnemyEncounters
+  - NpcParticipants
+  - RequiredItems
+  - RewardItems
+  - RewardMoney
+  - RelationshipChanges
+  - WorldStateChanges
+  - FailureConditions
+  - NextQuestIds
+  - SequelFlags
+starter_choices:
+  - id: STARTER_EEVEE
+    name: Evoli
+    style: Flexibel; spätere Entwicklungsentscheidung.
+  - id: STARTER_NIDORAN
+    name: Nidoran
+    style: Offensiv; frühe Entwicklungsmöglichkeiten.
+  - id: STARTER_POLIWAG
+    name: Quapsel
+    style: Defensiv; Wasser- und Statusfähigkeiten.
+bonding_stats:
+  - Vertrauen
+  - Zufriedenheit
+  - Mut
+  - Erschöpfung
+  - Loyalität
+  - Charakter
+acts:
+  - id: ACT_1
+    title: Der Beginn der Reise
+    episode_range: EP001-EP005
+    summary: Alabastia bis Marmoria City; Starterwahl, Route 1, Vertania, Wald und erster Orden.
+  - id: ACT_2
+    title: Mondstein und Wasserblumen
+    episode_range: EP006-EP014
+    summary: Mondberg, Azuria, Bills Leuchtturm und Major Bob.
+  - id: ACT_3
+    title: Die M.S. Anne und das offene Meer
+    episode_range: EP015-EP021
+    summary: Luxusliner, Schiffbruch, Rieseninsel und Hafennebenquests.
+  - id: ACT_4
+    title: Saffronia, Lavandia und Prismania
+    episode_range: EP022-EP029
+    summary: Sabrina, Pokémon-Turm, Erika und Pflege-/Turniersysteme.
+  - id: ACT_5
+    title: Fuchsania und die verborgenen Experimente
+    episode_range: EP030-EP038
+    summary: Koga, Safari-Kontinuität, Ditto und sichere Porygon-Digitalquest.
+  - id: ACT_6
+    title: Entwicklung, Verantwortung und alte Pokémon
+    episode_range: EP039-EP051
+    summary: Entwicklungsentscheidungen, Relaxo, Fossilien, Togepi und Bisasams Garten.
+  - id: ACT_7
+    title: Team Rockets Zuchtcenter und die letzten Orden
+    episode_range: EP052-EP064
+    summary: Rocket-Zuchtcenter, Zinnoberinsel, Vertania-Arena und Mewtwo-Enthüllung.
+  - id: ACT_8
+    title: Vorbereitung auf die Liga
+    episode_range: SPECIALS-EP073
+    summary: Winterereignisse, Eichs Ranch, Bruno, Pokémopolis und Ligafackel.
+  - id: ACT_9
+    title: Das Indigo-Plateau
+    episode_range: EP074-EP082
+    summary: Indigo-Konferenz, Richie, Rocket-Entführung und Orange-Insel-Epilog.
+quests:
+  - QuestId: KANTO_MAIN_001
+    SourceEpisode: EP001
+    Act: ACT_1
+    QuestType: Main
+    Title: Ein Morgen zu spät
+    Description: Erstelle die Trainerfigur, erhalte die Trainerlizenz und wähle ein Forschungs-Pokémon, während Ash parallel Pikachu erhält.
+    PrerequisiteQuestIds: []
+    RequiredBadges: []
+    QuestGiverNpcId: PROF_OAK
+    Locations: [PALLET_TOWN, OAK_LAB]
+    Objectives:
+      - Charakterdaten bestätigen.
+      - Mit Professor Eich sprechen.
+      - Evoli, Nidoran oder Quapsel als Starter wählen.
+      - Pokédex, Regionskarte und Ordenetui erhalten.
+    OptionalObjectives:
+      - Mit Delia und Gary sprechen.
+      - Ashs verspäteten Start beobachten.
+    EnemyEncounters: []
+    NpcParticipants: [PROF_OAK, ASH, GARY, DELIA]
+    RequiredItems: []
+    RewardItems: [TRAINER_LICENSE, POKEDEX, REGION_MAP, BADGE_CASE]
+    RewardMoney: 0
+    RelationshipChanges:
+      PROF_OAK: 5
+      GARY: -2
+      ASH: 2
+    WorldStateChanges:
+      PLAYER_JOURNEY_STARTED: true
+      ASH_RECEIVED_PIKACHU: true
+    FailureConditions: []
+    NextQuestIds: [KANTO_MAIN_002]
+    SequelFlags:
+      ORANGE_ARCHIPELAGO_UNLOCKED: false
+  - QuestId: KANTO_MAIN_002
+    SourceEpisode: EP001
+    Act: ACT_1
+    QuestType: Main
+    Title: Der Sturm über Route 1
+    Description: Hilf Ash und Pikachu nach dem Habitak-Angriff und dokumentiere den unbekannten Vogel am Himmel.
+    PrerequisiteQuestIds: [KANTO_MAIN_001]
+    RequiredBadges: []
+    QuestGiverNpcId: ASH
+    Locations: [ROUTE_1]
+    Objectives:
+      - Ash und Pikachu auf Route 1 finden.
+      - Habitak-Schwarm ablenken.
+      - Pikachu zur sicheren Flucht verhelfen.
+      - Den unbekannten Vogel skizzieren.
+    OptionalObjectives:
+      - Eine Habitak-Feder bergen.
+      - Kein eigenes Pokémon kampfunfähig werden lassen.
+    EnemyEncounters: [WILD_SPEAROW_SWARM]
+    NpcParticipants: [ASH, PIKACHU]
+    RequiredItems: []
+    RewardItems: [MYSTERY_BIRD_SKETCH, SPEAROW_FEATHER]
+    RewardMoney: 200
+    RelationshipChanges:
+      ASH: 5
+    WorldStateChanges:
+      MYSTERY_BIRD_SEEN: true
+    FailureConditions:
+      - Ash erreicht Vertania ohne Hilfe; Beziehung zu Ash sinkt.
+    NextQuestIds: [KANTO_MAIN_003]
+    SequelFlags:
+      LEGENDARY_BIRD_THREAD_STARTED: true
+  - QuestId: KANTO_MAIN_003
+    SourceEpisode: EP002
+    Act: ACT_1
+    QuestType: Main
+    Title: Notfall im Pokémon-Center
+    Description: Bringe Ash und Pikachu zum Pokémon-Center, stabilisiere die Notversorgung und verteidige das Gebäude gegen Team Rocket.
+    PrerequisiteQuestIds: [KANTO_MAIN_002]
+    RequiredBadges: []
+    QuestGiverNpcId: NURSE_JOY_VIRIDIAN
+    Locations: [VIRIDIAN_CITY, VIRIDIAN_POKEMON_CENTER]
+    Objectives:
+      - Ash und Pikachu ins Pokémon-Center begleiten.
+      - Den Notstromgenerator reparieren.
+      - Jessie, James und Mauzi zurückschlagen.
+    OptionalObjectives:
+      - Alle gelagerten Pokébälle sichern.
+      - Schwere Gebäudeschäden verhindern.
+    EnemyEncounters: [ROCKET_JESSIE_JAMES_MEOWTH]
+    NpcParticipants: [ASH, MISTY, NURSE_JOY_VIRIDIAN, OFFICER_JENNY_VIRIDIAN, JESSIE, JAMES, MEOWTH]
+    RequiredItems: []
+    RewardItems: [BURNT_BIKE_BELL, ROCKET_BADGE_FRAGMENT]
+    RewardMoney: 500
+    RelationshipChanges:
+      OFFICER_JENNY_VIRIDIAN: 10
+      MISTY: 3
+    WorldStateChanges:
+      TEAM_ROCKET_TRACKS_PLAYER: true
+      MISTY_BIKE_DEBT_STARTED: true
+    FailureConditions:
+      - Generator bleibt defekt; Heilkosten in Vertania steigen vorübergehend.
+    NextQuestIds: [KANTO_MAIN_004, KANTO_SIDE_BIKE_DEBT_001]
+    SequelFlags:
+      ROCKET_PROJECT_M_DISCOVERED: false
+  - QuestId: KANTO_MAIN_004
+    SourceEpisode: EP003
+    Act: ACT_1
+    QuestType: Main
+    Title: Spuren im Unterholz
+    Description: Durchquere den Vertania-Wald, lerne das Fangsystem und begleite frühe Raupy- und Tauboga-Ereignisse.
+    PrerequisiteQuestIds: [KANTO_MAIN_003]
+    RequiredBadges: []
+    QuestGiverNpcId: OFFICER_JENNY_VIRIDIAN
+    Locations: [VIRIDIAN_FOREST]
+    Objectives:
+      - Erste Fangprüfung abschließen.
+      - Drei Waldspuren untersuchen.
+      - Ashs Raupy-Ereignis beobachten.
+    OptionalObjectives:
+      - Ein eigenes Käfer-Pokémon fangen.
+      - Waldpfad ohne zusätzliche Erschöpfung abschließen.
+    EnemyEncounters: [WILD_CATERPIE, WILD_WEEDLE, WILD_PIDGEOTTO]
+    NpcParticipants: [ASH, MISTY]
+    RequiredItems: [POKEDEX]
+    RewardItems: [FOREST_SAMPLE]
+    RewardMoney: 300
+    RelationshipChanges:
+      MISTY: 2
+    WorldStateChanges:
+      CAPTURE_TUTORIAL_COMPLETE: true
+    FailureConditions: []
+    NextQuestIds: [KANTO_MAIN_005]
+    SequelFlags: {}
+  - QuestId: KANTO_MAIN_005
+    SourceEpisode: EP004
+    Act: ACT_1
+    QuestType: Main
+    Title: Die Prüfung des Samurai
+    Description: Bestehe den ersten Rivalenkampf im Wald und rette getrennte Pokémon während eines Bibor-Angriffs.
+    PrerequisiteQuestIds: [KANTO_MAIN_004]
+    RequiredBadges: []
+    QuestGiverNpcId: SAMURAI
+    Locations: [VIRIDIAN_FOREST, SAMURAI_CLEARING]
+    Objectives:
+      - Samurai herausfordern.
+      - Bibor-Angriff überstehen.
+      - Vermisste Pokémon einsammeln.
+    OptionalObjectives:
+      - Samurai im ersten Versuch besiegen.
+      - Kein wildes Bibor unnötig besiegen.
+    EnemyEncounters: [TRAINER_SAMURAI, WILD_BEEDRILL_SWARM]
+    NpcParticipants: [SAMURAI, ASH, MISTY]
+    RequiredItems: []
+    RewardItems: [SAMURAI_TOKEN]
+    RewardMoney: 450
+    RelationshipChanges:
+      ASH: 3
+      PLAYER_RIVAL: 1
+    WorldStateChanges:
+      FIRST_RIVAL_BATTLE_COMPLETE: true
+    FailureConditions:
+      - Zu viele Bibor besiegt; Waldvertrauen sinkt.
+    NextQuestIds: [KANTO_MAIN_006]
+    SequelFlags: {}
+  - QuestId: KANTO_MAIN_006
+    SourceEpisode: EP005
+    Act: ACT_1
+    QuestType: Main
+    Title: Felsen gegen Entschlossenheit
+    Description: Erreiche Marmoria City, bestehe den ersten Arenakampf und lerne Rockos Rolle als Pflege- und Zuchtmentor kennen.
+    PrerequisiteQuestIds: [KANTO_MAIN_005]
+    RequiredBadges: []
+    QuestGiverNpcId: BROCK
+    Locations: [PEWTER_CITY, PEWTER_GYM]
+    Objectives:
+      - Arenaregeln für offizielle Ordenkämpfe lernen.
+      - Rocko in einem eigenen Kampf herausfordern.
+      - Felsorden erhalten.
+      - Rockos Einführung in Pflege und Kochen abschließen.
+    OptionalObjectives:
+      - Kampf ohne Typenvorteils-Spam gewinnen.
+      - Ein erschöpftes Pokémon vor dem Kampf vollständig versorgen.
+    EnemyEncounters: [GYM_LEADER_BROCK]
+    NpcParticipants: [BROCK, ASH, FLINT]
+    RequiredItems: [BADGE_CASE]
+    RewardItems: [BOULDER_BADGE, CARE_RECIPE_BASIC]
+    RewardMoney: 1200
+    RelationshipChanges:
+      BROCK: 8
+      ASH: 2
+    WorldStateChanges:
+      BOULDER_BADGE_EARNED: true
+      BROCK_JOINS_ASH_GROUP: true
+      BONDING_SYSTEM_UNLOCKED: true
+    FailureConditions: []
+    NextQuestIds: [KANTO_MAIN_007]
+    SequelFlags:
+      INDIGO_BADGE_COUNT: 1
+milestone_quests:
+  - QuestId: KANTO_MAIN_014
+    SourceEpisode: EP014
+    Act: ACT_2
+    Title: Stärke oder Geschwindigkeit
+    RewardItems: [THUNDER_BADGE]
+    WorldStateChanges:
+      LIGHTHOUSE_RECORDINGS_COPIED_BY_ROCKET: true
+  - QuestId: KANTO_MAIN_021
+    SourceEpisode: EP021
+    Act: ACT_3
+    Title: Der Flug der rosa Smettbo
+    RewardItems: [BUTTERFREE_MEMORY_RIBBON]
+    WorldStateChanges:
+      MS_ANNE_MANIFEST_POINTS_TO_BREEDING_CENTER_CINNABAR_AND_VIRIDIAN: true
+  - QuestId: KANTO_MAIN_038
+    SourceEpisode: EP038_SAFE_REWRITE
+    Act: ACT_5
+    Title: Gefangen im Transfersystem
+    RewardItems: [PORYGON_DATA_SHARD, ENCRYPTED_NETWORK_CHIP]
+    WorldStateChanges:
+      TRANSFER_SYSTEM_TEMPORARILY_DISABLED: true
+      PROJECT_M01_NAME_REVEALED: true
+  - QuestId: KANTO_MAIN_064
+    SourceEpisode: EP064
+    Act: ACT_7
+    Title: Der achte Orden
+    RewardItems: [EARTH_BADGE, MEWTWO_FILE]
+    WorldStateChanges:
+      MEWTWO_SILHOUETTE_SEEN: true
+      INDIGO_BADGE_COUNT: 8
+  - QuestId: KANTO_MAIN_082
+    SourceEpisode: EP082
+    Act: ACT_9
+    Title: Abschluss der Indigo-Liga
+    RewardItems: [INDIGO_PARTICIPANT_BADGE, OFFICIAL_TRAINER_RANK]
+    WorldStateChanges:
+      KANTO_COMPLETED: true
+      ORANGE_ARCHIPELAGO_UNLOCKED: true
