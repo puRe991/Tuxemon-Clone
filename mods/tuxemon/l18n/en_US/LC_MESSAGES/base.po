@@ -4681,6 +4681,22 @@ msgstr "Tuxepedia"
 msgid "menu_load"
 msgstr "Load"
 
+msgid "menu_start_title"
+msgstr "Tuxemon"
+
+msgid "menu_start_subtitle"
+msgstr "Choose how your journey begins."
+
+msgid "menu_continue_journey"
+msgstr "Continue Journey"
+
+msgid "menu_begin_journey"
+msgstr "Begin Journey"
+
+msgid "menu_no_mods"
+msgstr "No active mod is configured, so a new journey cannot start."
+
+
 msgid "menu_monster"
 msgstr "Tuxemon"
 
