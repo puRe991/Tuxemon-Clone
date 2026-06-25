@@ -1,5 +1,7 @@
 slug: kanto_sandshrew
 species: kanto_region_archive
+sprites:
+  sheet: gfx/sprites/battle/missing
 moveset:
 - level_learned: 1
   technique: struggle

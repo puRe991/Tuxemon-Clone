@@ -1358,9 +1358,11 @@ class MonsterModel(DataModel, BaseLookupModel, validate_assignment=True):
         v: MonsterSpritesModel | None,
         info: ValidationInfo,
     ) -> MonsterSpritesModel:
+        if v is not None:
+            return v
+
         slug = info.data.get("slug")
-        default = MonsterSpritesModel(sheet=f"gfx/sprites/battle/{slug}-sheet")
-        return v or default
+        return MonsterSpritesModel(sheet=f"gfx/sprites/battle/{slug}-sheet")
 
     @field_validator("species")
     def translation_exists_species(cls, v: str) -> str:
