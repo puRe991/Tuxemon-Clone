@@ -1,12 +1,16 @@
-#!/usr/bin/env python3
 # SPDX-License-Identifier: GPL-3.0
 # Copyright (c) 2014-2026 William Edwards <shadowapex@gmail.com>, Benjamin Bean <superman2k5@gmail.com>
-"""Compatibility wrapper for launching Tuxemon from a source checkout."""
+"""Command-line entry point for launching Tuxemon as a module."""
 
 from __future__ import annotations
 
 from tuxemon.app import launch_game
 
 
-if __name__ == "__main__":
+def main() -> None:
+    """Launch Tuxemon using the shared startup routine."""
     launch_game()
+
+
+if __name__ == "__main__":
+    main()
