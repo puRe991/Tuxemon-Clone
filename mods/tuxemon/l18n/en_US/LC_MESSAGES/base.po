@@ -19075,5 +19075,8 @@ msgstr "Town Hall"
 msgid "flower_lady"
 msgstr "Flower Lady"
 
+msgid "kanto_region_archive"
+msgstr "Kanto region archive"
+
 msgid "cat_kanto_region_archive"
 msgstr "Kanto region archive"
